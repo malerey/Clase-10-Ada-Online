@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formularios</title>
+</head>
+
+
+
+
+
+
+<body>
+<h1>Formulario de registro</h1>
+  <form action="/contacto">
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+  
+    <label for="nombre_id">Nombre
+      <input id="nombre_id" required placeholder="Maximo 30 caracteres" type="text" name="first_name">
+    </label>
+   
+   
+      <p>Apellido
+      <input maxlength="7" type="text" name="apellido">
+    </p>
+
+    <p>Email
+      <input type="email" name="email">
+    </p>
+
+    <p>Edad
+      <input type="number" name="edad">
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Datos random</legend>
+    <p>Contraseña
+      <input type="password" name="contraseña">
+    </p>
+
+    <p>Codigo de area
+      <input type="number" value="261" name="area_code">
+    </p>
+
+    <p>Telefono
+      <input type="number" placeholder="Sin codigo de area" name="edad">
+    </p>
+
+    <p>Acepta terminos y condiciones
+      <input checked type="radio" name="terminos" value="1"> Si
+      <input type="radio" name="terminos" value="no"> No
+      <input type="radio" name="terminos" value="LO QUE SEA "> Tal vez
+    </p>
+
+    <p>Le gustan los:
+      <input type="checkbox" name="pet" value="dog">Perros
+      <input type="checkbox" checked name="pet" value="cat">Gatos
+      <input type="checkbox" name="pet" value="canary">Canarios
+      <input type="checkbox" name="pet" value="others">Otros animales
+    </p>
+
+    <p>
+
+      <input type="date">Fecha de nacimiento
+    </p>
+
+    <p>
+      <input type="url">Pagina web
+    </p>
+
+
+    <p>
+      <input type="file" name="archive">Adjuntar archivos
+    </p>
+
+
+    <p>
+      <textarea rows="8" cols="50" placeholder="Describite brevemente" name="text area"></textarea>
+    </p>
+
+
+    <p>Seleccione una ciudad donde desee tener graduacion de Ada Online
+      <select name="ciudades">
+        <option value="BUE">Buenos Aires</option>
+        <option>La Plata</option>
+        <option value="MDQ">Mar del Plata</option>
+        <option selected>Miramar</option>
+        <option>Córdoba</option>
+        <option value="MZA">Mendoza</option>
+      </select>
+
+
+    </p>
+
+  </fieldset>
+
+    <input type="submit" value="Enviar">
+  <button>Enviar</button>
+  </form>
+
+</body>
+
+</html>
